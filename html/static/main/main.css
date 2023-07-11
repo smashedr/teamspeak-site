@@ -1,0 +1,25 @@
+/* Background Image */
+body {
+    background-image: url("/static/images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-color: rgb(0,0,0);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Card Transparency Class */
+.transparent {
+    background: rgba(33, 37, 41 ,0.8);
+}
+
+/* Back to Top Button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+}

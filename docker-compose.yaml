@@ -1,0 +1,53 @@
+version: "3.7"
+
+services:
+  php-nginx:
+    image: trafex/php-nginx
+    deploy:
+      mode: global
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 60M
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik-public"
+      - "traefik.constraint-label=traefik-public"
+      - "traefik.http.routers.teamspeak-site-http.rule=Host(${TRAEFIK_HOST})"
+      - "traefik.http.routers.teamspeak-site-http.entrypoints=http"
+      - "traefik.http.routers.teamspeak-site-http.middlewares=https-redirect"
+      - "traefik.http.routers.teamspeak-site-https.rule=Host(${TRAEFIK_HOST})"
+      - "traefik.http.routers.teamspeak-site-https.entrypoints=https"
+      - "traefik.http.routers.teamspeak-site-https.tls=true"
+      - "traefik.http.routers.teamspeak-site-https.tls.certresolver=le"
+      - "traefik.http.services.teamspeak-site.loadbalancer.server.port=8080"
+      - "traefik.http.services.teamspeak-site.loadbalancer.server.scheme=http"
+    volumes:
+      - var_www_html:/var/www/html:ro
+    networks:
+      - internal
+    ports:
+      - "80:8080"
+
+  sftp:
+    image: atmoz/sftp:alpine
+    deploy:
+      mode: global
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 25M
+    command: ${USER:-shane}:${PASS:-letmein123}:${SUID:-65534}
+    volumes:
+      - var_www_html:/home/${USER:-shane}/html
+      - etc_ssh:/etc/ssh
+    ports:
+      - "${PORT:-2222}:22"
+
+networks:
+  internal:
+    driver: bridge
+
+volumes:
+  var_www_html:
+  etc_ssh:

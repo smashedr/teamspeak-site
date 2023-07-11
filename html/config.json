@@ -1,0 +1,20 @@
+{
+  "settings": {
+    "author": "SmAsHeD",
+    "title": "SmAsHeD - TeamSpeak",
+    "description": "SmAsHeD Discord Backup TeamSpeak Server Details.",
+    "keywords": "SmAsHeD, TeamSpeak",
+    "color": "#041b94",
+    "site_name": "cssnr.com",
+    "url": "https://teamspeak.cssnr.com/",
+    "image": "https://teamspeak.cssnr.com/static/images/logo.png",
+    "type": "image/jpg",
+    "size": "256",
+    "google": "iH7unLdA7YG00zwgr9qzjNIsBZrVReR_IrwwDWhwSHM"
+  },
+  "links": {
+    "status": "https://uptime-nj.hosted-domains.com/status/smashed",
+    "source": "https://github.com/smashedr",
+    "discord_code": "wXy6m2X8wY"
+  }
+}
