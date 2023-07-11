@@ -2,7 +2,7 @@
     $config = json_decode(file_get_contents('config.json'), false);
 ?>
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en" class="vh-100" data-bs-theme="dark">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,7 +54,7 @@
             <div class="card text-center transparent" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title text-white"><i class="fa-solid fa-circle-down"></i> Download Teamspeak</h5>
-                    <p class="card-text">Download and Install TeamSpeak for your Operating System.</p>
+                    <p class="card-text">Download and Install TeamSpeak for your System.</p>
                     <a href="https://teamspeak.com/en/downloads/" class="card-link" target="_blank">
                         TeamSpeak Downloads <i class="fas fa-external-link-alt ms-1"></i></a>
                 </div>
@@ -64,7 +64,7 @@
         <div class="col-auto mb-2">
             <div class="card text-center transparent" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title text-white"><i class="fa-solid fa-circle-right"></i> Connect to TeamSpeak</h5>
+                    <h5 class="card-title text-white"><i class="fa-solid fa-circle-right"></i> Connect to Server</h5>
                     <p class="card-text">TeamSpeak Server Address:<br><kbd>teamspeak.cssnr.com</kbd>
                         <a class="clip" role="button" data-clipboard-text="teamspeak.cssnr.com">
                             <i class="fa-regular fa-clipboard text-white ms-1"></i></a></p>
@@ -117,7 +117,7 @@
 <script type="text/javascript" src="static/jquery/jquery-3.7.0.min.js"></script>
 <script type="text/javascript" src="static/popper-js/popper.min.js"></script>
 <script type="text/javascript" src="static/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="static/bootstrap/theme.js"></script>
+<!--<script type="text/javascript" src="static/bootstrap/theme.js"></script>-->
 <script type="text/javascript" src="static/clipboard-js/clipboard.min.js"></script>
 <script type="text/javascript" src="static/font-awesome/js/all.min.js"></script>
 <script type="text/javascript" src="static/main/main.js"></script>
