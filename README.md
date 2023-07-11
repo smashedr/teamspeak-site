@@ -1,8 +1,9 @@
 [![Status](https://uptime-nj.hosted-domains.com/api/badge/44/status)](https://uptime-nj.hosted-domains.com/status/smashed)
 [![Discord](https://img.shields.io/discord/111645911091814400?color=7289da&label=Discord&logo=discord&logoColor=white&style=flat)](https://discord.gg/wXy6m2X8wY)
+[![](https://repository-images.githubusercontent.com/664907679/55227e8a-6aa0-4d4a-968a-b79fe197bd8f)](https://teamspeak.cssnr.com/)
 # TeamSpeak Website
 
-Nothing to see here, go away!
+**Nothing to see here, go away!**
 
 1.   Clone Repo
 2.   Copy settings.env.example to settings.env and Update
